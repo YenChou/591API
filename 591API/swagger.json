@@ -1,0 +1,96 @@
+{
+    "swagger":"2.0",
+    "info":{
+        "version":"1.0.0",
+        "title":"591 API",
+        "description":"A API to find house from 591"
+    },
+    "servers":[
+        {
+            "url":"/"
+        }
+    ],
+    "tags":[
+        {
+            "name":"House Request",
+            "description":"Return house that depend on url parameters"
+        }
+    ],
+    "paths":{
+        "/houses":{
+            "get":{
+                "summary":"Gets some house",
+                "response":{
+                    "200":{
+                        "description":"success",
+                        "schema":{
+                            "type":"json",
+                            "items":{
+                                "properties":{
+                                    "價錢":{
+                                        "type":"long"
+                                    },
+                                    "可遷入日":{
+                                        "type":"keyword"
+                                    },
+                                    "地區":{
+                                        "type":"keyword"
+                                    },
+                                    "地址":{
+                                        "type":"keyword"
+                                    },
+                                    "坪數":{
+                                        "type":"double"
+                                    },
+                                    "型態":{
+                                        "type":"keyword"
+                                    },
+                                    "屋主名稱":{
+                                        "type":"keyword"
+                                    },
+                                    "屋主身分":{
+                                        "type":"keyword"
+                                    },
+                                    "性別要求":{
+                                        "type":"keyword"
+                                    },
+                                    "房屋名稱":{
+                                        "type":"keyword"
+                                    },
+                                    "所在樓層":{
+                                        "type":"keyword"
+                                    },
+                                    "押金":{
+                                        "type":"keyword"
+                                    },
+                                    "最短租期":{
+                                        "type":"keyword"
+                                    },
+                                    "有效期":{
+                                        "type":"keyword"
+                                    },
+                                    "現況":{
+                                        "type":"keyword"
+                                    },
+                                    "總樓層":{
+                                        "type":"long"
+                                    },
+                                    "身份要求":{
+                                        "type":"keyword"
+                                    },
+                                    "車位":{
+                                        "type":"keyword"
+                                    },
+                                    "電話":{
+                                        "type":"keyword"
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
