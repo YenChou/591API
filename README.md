@@ -1,4 +1,3 @@
 # 591API
-建立RESTful API
-內含爬網程式
-能夠透過url參數來達成條件式搜尋
+建立Flask-RESTful API，
+crawler = 爬網程式，使用BS4&Selenium套件。
